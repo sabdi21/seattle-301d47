@@ -64,7 +64,7 @@ function handleClick(event) {
   for(let i = 0; i < names.length; i++){
     if(event.target.id === allProducts[i].name) {
       allProducts[i].votes += 1;
-      console.log(event.target.id + ' has ' + allProducts[i].votes + ' votes in ' + allProducts[i].views + ' views');
+      console.log(`${event.target.id} has ${allProducts[i].votes} ${votes} in ${allProducts[i].views}  ${views}`);
     }
   }
   localStorage.busmall = JSON.stringify(allProducts);
